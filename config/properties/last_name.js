@@ -1,4 +1,4 @@
-const {snowflakeSourceId} = require('../../commands.js');
+const { snowflakeSourceId } = require('../../getConfigInputs.js');
 exports.default = async function buildConfig() {
     return [
       {
@@ -11,7 +11,7 @@ exports.default = async function buildConfig() {
         identifying: false, // Should we consider this property Identifying in the UI? Only one Property can be identifying.
         isArray: false, // Is this an Array Property?
         options: {
-          column: "LAST_NAME", // The column to use for this Property - e.g. `column: "first_name"`
+          column: "LNAME", // The column to use for this Property - e.g. `column: "first_name"`
           aggregationMethod: "exact", // The aggregation method.  Options are: "exact", "average", "count", "sum", "min", "max", "most recent value", "least recent value"
           sort: null, // You can sort the results by another column in this table
         },

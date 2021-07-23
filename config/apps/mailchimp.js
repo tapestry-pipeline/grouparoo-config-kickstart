@@ -1,5 +1,5 @@
 
-const {mailchimpApiKey,  mailchimpAppId} = require('../../commands.js');
+const {mailchimpApiKey,  mailchimpAppId} = require('../../getConfigInputs.js');
 exports.default = async function buildConfig() {
   return [
     {

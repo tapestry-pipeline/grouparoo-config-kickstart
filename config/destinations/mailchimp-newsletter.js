@@ -1,4 +1,4 @@
-const {mailchimpListId, mailchimpSourceId, mailchimpAppId} = require('../../commands.js');
+const { mailchimpListId, mailchimpSourceId, mailchimpAppId } = require('../../getConfigInputs.js');
 exports.default = async function buildConfig() {
   return [
     {
@@ -22,15 +22,13 @@ exports.default = async function buildConfig() {
         email_address: "EMAIL",
         FNAME: "FIRST_NAME",
         LNAME: "LAST_NAME",
-        CITY: "CITY",
-        // STREETADDRESS: "STREETADDRESS",
       },
 
       // You can export group memberships.
       // Keys are the name to display in the destination, values are the IDs of the Groups in Grouparoo.
-      // destinationGroupMemberships: {
-      //   "all valid emails": "all_emails",
-      // },
+      destinationGroupMemberships: {
+        "tapestry emails": "all_emails",
+      },
     },
   ];
 };

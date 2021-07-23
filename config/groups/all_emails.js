@@ -1,4 +1,4 @@
-const { allEmailsGroupId } = require('../../commands.js');
+const { allEmailsGroupId } = require('../../getConfigInputs.js');
 exports.default = async function buildConfig() {
   return [
     {

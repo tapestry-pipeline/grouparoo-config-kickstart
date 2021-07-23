@@ -1,5 +1,12 @@
-
-const { snowAcctHost, snowUserAcctUser, snowAcctPass, snowflakeAppId } = require('../../commands.js');
+const { 
+  snowAcctHost,
+  snowUserAcctUser,
+  snowAcctPass,
+  snowflakeAppId,
+  snowflakeWarehouseName,
+  snowflakeDatabaseName,
+  snowflakeSchemaName
+} = require('../../getConfigInputs.js');
 
 exports.default = async function buildConfig() {
   return [
@@ -12,9 +19,9 @@ exports.default = async function buildConfig() {
         account: snowAcctHost,
         username: snowUserAcctUser,
         password: snowAcctPass ,
-        warehouse: "COMPUTE_WH", // The Snowflake warehouse to use - e.g. `warehouse: "COMPUTE_WH"`
-        database: "SF_TUTS", // The Snowflake database to use
-        schema: "PUBLIC", // The Snowflake schema (default: PUBLIC)
+        warehouse: snowflakeWarehouseName, // The Snowflake warehouse to use - e.g. `warehouse: "COMPUTE_WH"`
+        database: snowflakeDatabaseName, // The Snowflake database to use
+        schema:  snowflakeSchemaName, // The Snowflake schema (default: PUBLIC)
       },
     },
   ];

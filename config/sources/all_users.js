@@ -1,5 +1,5 @@
-const {snowflakeAppId} = require ('../../commands.js');
-const {snowflakeTableName, snowflakeSourceId} = require ('../../commands.js');
+const { snowflakeAppId } = require ('../../getConfigInputs.js');
+const { snowflakeTableName, snowflakeSourceId } = require ('../../getConfigInputs.js');
 
 exports.default = async function buildConfig() {
   return [
@@ -31,7 +31,10 @@ exports.default = async function buildConfig() {
       // left column (email) in snowflake
       mapping: {
         EMAIL: "EMAIL",  // snowflake table column-name : Grouparoo Property ID
+        // FNAME: "FIRST_NAME",
+        // LNAME: "LAST_NAME"
       },
+
     },
 
     /**
@@ -51,7 +54,7 @@ exports.default = async function buildConfig() {
       recurring: true, // should this Schedule regularly run?
       recurringFrequency: 1000 * 60 * 15, // 15 minutes, in ms
       options: {
-        column: "START_DATE", // the column to check for new records in table which this Schedule's Source is using (e.g. column: 'updated_at')
+        column: "EMAIL", // the column to check for new records in table which this Schedule's Source is using (e.g. column: 'updated_at')
       }, // TODO - this will need to be updated with the right Column name from DBT
     },
   ];
