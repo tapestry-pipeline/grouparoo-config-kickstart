@@ -14,7 +14,7 @@ const snowflakeSourceId = "all_users";
 // const snowflakeSchemaName = 'DBT_TAPESTRY';
 
 const mailchimpAppId = "mailchimp_destination";
-// const mailchimpSourceId  = "mailchimp-newsletter";
+const mailchimpSourceId  = "mailchimp-newsletter";
 // const mailchimpApiKey = JSON.parse(execSync('aws ssm get-parameter --name "/mailchimp/apiKey" --with-decryption').toString()).Parameter.Value;
 // const mailchimpListId = JSON.parse(execSync('aws ssm get-parameter --name "/mailchimp/listId" --with-decryption').toString()).Parameter.Value;
 
@@ -29,15 +29,13 @@ module.exports =  {
   // snowUserAcctUser,
   // snowAcctPass,
   snowflakeAppId,
-  // snowflakeTableName,
-  // snowflakeSourceId,
+  snowflakeTableName,
+  snowflakeSourceId,
   // snowflakeWarehouseName,
   // snowflakeDatabaseName,
   // snowflakeSchemaName,
   // snowflakeSourceId,
-  // mailchimpApiKey,
-  // mailchimpListId,
-  // mailchimpSourceId,
+  mailchimpSourceId,
   mailchimpAppId,
-  // allEmailsGroupId
+  allEmailsGroupId
 }
