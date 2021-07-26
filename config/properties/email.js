@@ -1,4 +1,4 @@
-const {snowflakeSourceId} = require('../../getConfigInputs.js');
+const {snowflakeSourceId} = require('../../constants.js');
 exports.default = async function buildConfig() {
   return [
     {

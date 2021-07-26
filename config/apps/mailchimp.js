@@ -1,7 +1,7 @@
 // const {mailchimpApiKey,  mailchimpAppId} = require('../../getConfigInputs.js');
 
 // const {mailchimpApiKey,  mailchimpAppId} = require('../../getConfigInputs.js');
-const {mailchimpAppId} = require('../../getConfigInputs.js');
+const {mailchimpAppId} = require('../../constants.js');
 
 
 const mailchimpApiKey = process.env.MAILCHIMP_API_KEY

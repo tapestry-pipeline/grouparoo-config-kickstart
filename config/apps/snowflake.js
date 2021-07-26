@@ -1,5 +1,5 @@
 
-const {snowflakeAppId} = require('../../getConfigInputs.js');
+const {snowflakeAppId} = require('../../constants.js');
 
 exports.default = async function buildConfig() {
   // const account = JSON.parse(execSync('aws ssm get-parameter --name "/snowflake/acct-hostname" --with-decryption').toString()).Parameter.Value;
