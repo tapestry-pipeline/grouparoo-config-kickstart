@@ -4,7 +4,6 @@
 const {mailchimpAppId} = require('../../getConfigInputs.js');
 
 
-// 830405a4f4d726ab4b5e20be73c5a092-us6
 const mailchimpApiKey = process.env.MAILCHIMP_API_KEY
 exports.default = async function buildConfig() {
   return [
