@@ -1,4 +1,7 @@
-const { mailchimpListId, mailchimpSourceId, mailchimpAppId } = require('../../getConfigInputs.js');
+// const { mailchimpListId, mailchimpSourceId, mailchimpAppId } = require('../../getConfigInputs.js');
+const {mailchimpSourceId, mailchimpAppId } = require('../../getConfigInputs.js');
+
+const mailchimpListId = process.env.MAILCHIMP_API_KEY
 exports.default = async function buildConfig() {
   return [
     {
