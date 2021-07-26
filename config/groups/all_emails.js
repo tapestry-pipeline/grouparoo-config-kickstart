@@ -1,4 +1,5 @@
 const { allEmailsGroupId } =  require ('../../constants.js');
+console.log(allEmailsGroupId)
 exports.default = async function buildConfig() {
   return [
     {
