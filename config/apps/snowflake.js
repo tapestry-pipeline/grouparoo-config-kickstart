@@ -1,3 +1,6 @@
+
+const {snowflakeAppId} = require('../../getConfigInputs.js');
+
 exports.default = async function buildConfig() {
   // const account = JSON.parse(execSync('aws ssm get-parameter --name "/snowflake/acct-hostname" --with-decryption').toString()).Parameter.Value;
   // const username = JSON.parse(execSync('aws ssm get-parameter --name "/snowflake/acct-username" --with-decryption').toString()).Parameter.Value;
@@ -12,8 +15,8 @@ exports.default = async function buildConfig() {
   return [
     {
       class: "App",
-      id: "tapestry_snowflake",
-      name: "Tapestry Snowflake",
+      id: snowflakeAppId,
+      name: snowflakeAppId,
       type: "snowflake",
       options: {
         account: account,
