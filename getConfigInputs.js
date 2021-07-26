@@ -9,16 +9,16 @@ const snowflakeAppId = 'snowflake_destination';
 const snowflakeTableName = "EMAIL_MODEL";
 
 const snowflakeSourceId = "all_users";
-const snowflakeWarehouseName = 'TAPESTRY_WAREHOUSE';
-const snowflakeDatabaseName = 'TAPESTRY_DATABASE';
-const snowflakeSchemaName = 'DBT_TAPESTRY';
+// const snowflakeWarehouseName = 'TAPESTRY_WAREHOUSE';
+// const snowflakeDatabaseName = 'TAPESTRY_DATABASE';
+// const snowflakeSchemaName = 'DBT_TAPESTRY';
 
 const mailchimpAppId = "mailchimp_destination";
-const mailchimpSourceId  = "mailchimp-newsletter";
+// const mailchimpSourceId  = "mailchimp-newsletter";
 // const mailchimpApiKey = JSON.parse(execSync('aws ssm get-parameter --name "/mailchimp/apiKey" --with-decryption').toString()).Parameter.Value;
 // const mailchimpListId = JSON.parse(execSync('aws ssm get-parameter --name "/mailchimp/listId" --with-decryption').toString()).Parameter.Value;
 
-const allEmailsGroupId = "all_emails";
+// const allEmailsGroupId = "all_emails";
 
 // const snowAcctHost = "dla27293.us-east-1";
 // const snowUserAcctUser = "fantasticfour";
@@ -29,15 +29,15 @@ module.exports =  {
   // snowUserAcctUser,
   // snowAcctPass,
   snowflakeAppId,
-  snowflakeTableName,
-  snowflakeSourceId,
-  snowflakeWarehouseName,
-  snowflakeDatabaseName,
-  snowflakeSchemaName,
-  snowflakeSourceId,
+  // snowflakeTableName,
+  // snowflakeSourceId,
+  // snowflakeWarehouseName,
+  // snowflakeDatabaseName,
+  // snowflakeSchemaName,
+  // snowflakeSourceId,
   // mailchimpApiKey,
   // mailchimpListId,
-  mailchimpSourceId,
+  // mailchimpSourceId,
   mailchimpAppId,
-  allEmailsGroupId
+  // allEmailsGroupId
 }
