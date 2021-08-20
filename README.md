@@ -9,7 +9,7 @@ Tapestry is an open source orchestration framework for the deployment of user en
 
 ## Usage
 
-This respository is cloned into your local project folder during the 'tapestry kickstart' command. This respository supplies the necessary Grouparoo configuration files to build a Grouparoo Image. Of note, this respository includes configuration files to connect Snowflake, the data warehouse, as the source and Mailchimp as the destination to Grouparoo.
+This respository is cloned into your local project folder during the `tapestry kickstart` command. This respository supplies the necessary Grouparoo configuration files to build a Grouparoo Image. Of note, this respository includes configuration files to connect Snowflake, the data warehouse, as the source and Mailchimp as the destination to Grouparoo.
 
 
 
